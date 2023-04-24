@@ -1,0 +1,195 @@
+﻿/* fonts  */
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf)
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --hover: #1D509F;
+}
+
+
+body {
+    /*-webkit-font-smoothing: antialiased;*/
+    font-family: "Raleway-regular";
+}
+
+.flex {
+    display: flex;
+}
+
+.center-items {
+    align-items: center;
+}
+
+.justify-contentent-center {
+    justify-content: center;
+}
+
+.justify-contentent-right {
+    justify-content: right;
+}
+
+header .top-nav .left .branding h4, header .top-nav .left .links {
+    color: var(--hover);
+    margin: 0.5rem 1rem;
+}
+
+header .top-nav .left .branding h4 {
+    font-size: 1rem;
+}
+
+header .top-nav .left .links a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    header .top-nav .left .links a:hover {
+        background: var(--hover);
+        color: var(--light);
+        border-radius: 10rem;
+    }
+
+header .top-nav {
+    margin-top: 6px;
+}
+
+/*Footer Style*/
+
+footer {
+    background-color: var(--hover);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    .footer-content p {
+        color: var(--light);
+    }
+
+.footer-links {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+    .footer-links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+        .footer-links li:last-child {
+            margin-right: 0;
+        }
+
+    .footer-links a {
+        color: var(--light);
+        text-decoration: none;
+    }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+
+/*HomePage Style*/
+
+.containar {
+    width: 40%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header img {
+    position: relative;
+    width: 100%;
+}
+
+header .hero {
+    position: relative;
+    top: 0;
+}
+
+header .containar {
+    margin-top: 12rem;
+    margin-right: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    header .containar h2 {
+        padding-bottom: 1rem;
+        color: var(--hover);
+    }
+
+    header .containar p {
+        text-align: justify;
+    }
+
+    header .containar div {
+        margin-top: 1rem;
+    }
+
+    header .containar .btn input[type=submit] {
+        padding: 0.70rem 0.70rem;
+        border-radius: 4px;
+        line-height: 0.8;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background-color: var(--hover);
+        color: var(--light);
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+        header .containar .btn input[type=submit]:hover {
+            background-color: var(--light);
+            color: var(--hover);
+            border: 1px solid var(--hover);
+        }
+
+
